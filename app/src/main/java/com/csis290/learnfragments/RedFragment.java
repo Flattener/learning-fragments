@@ -9,13 +9,13 @@ import android.widget.TextView;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Created by Charles Flaten on 3/4/2015.
  */
-public class GreenFragment extends Fragment {
-    private TextView tvGreen;
+public class RedFragment extends Fragment {
+    private TextView tvRed;
     private String message;
 
-    public GreenFragment() {
+    public RedFragment() {
         // Required empty public constructor
     }
 
@@ -27,18 +27,17 @@ public class GreenFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) { // we return the inflater that was passed to us
-        return inflater.inflate(R.layout.fragment_green, container, false); //R.laytout is what we need to remember
-
+        return inflater.inflate(R.layout.fragment_red, container, false); //R.laytout is what we need to remember
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        tvGreen = (TextView) view.findViewById(R.id.green_fragment_declaration);
-        tvGreen.setOnClickListener(new View.OnClickListener() {
+        tvRed = (TextView) view.findViewById(R.id.red_fragment_declaration);
+        tvRed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tvGreen.setText(message);
+                tvRed.setText(message);
             }
         });
     }

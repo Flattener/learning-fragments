@@ -2,15 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/android_green"
-    tools:context="com.csis290.learnfragments.GreenFragment">
+    android:background="@color/android_red"
+    tools:context="com.csis290.learnfragments.RedFragment">
 
     <TextView
-        android:id="@+id/green_fragment_declaration"
+        android:id="@+id/red_fragment_declaration"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="@string/fragment_green_declaration"
-    android:textSize="@dimen/font_fragment_declaration" />
+        android:text="@string/fragment_red_declaration"
+        android:textSize="@dimen/font_fragment_declaration" />
 
 </LinearLayout>
